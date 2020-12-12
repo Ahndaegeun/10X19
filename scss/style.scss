@@ -1,0 +1,52 @@
+@import "_variable";
+
+.body__container {
+    width: 100%;
+    height: 100vh;
+    main {
+        width: 100%;
+        height: 100%;
+        ul {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "title . tab"
+            "ten img five"
+            "nine img four"
+            "eight img three"
+            "seven img two"
+            "six img one"
+            ". made .";
+            justify-items: center;
+            align-items: center;
+            li {
+                color: $brown;
+                font-size: 40px;
+            }
+            li:nth-child(1) {grid-area: title;}
+            li:nth-child(2) {grid-area: tab;}
+            li:nth-child(3) {grid-area: one;}
+            li:nth-child(4) {grid-area: two;}
+            li:nth-child(5) {grid-area: three;}
+            li:nth-child(6) {grid-area: four;}
+            li:nth-child(7) {grid-area: five;}
+            li:nth-child(8) {grid-area: six;}
+            li:nth-child(9) {grid-area: seven;}
+            li:nth-child(10) {grid-area: eight;}
+            li:nth-child(11) {grid-area: nine;}
+            li:nth-child(12) {grid-area: ten;}
+            li:nth-child(13) {grid-area: made;}
+            li:nth-child(14) {
+                grid-area: img;
+                border: 1px solid $brown;
+                width: 100%;
+                height: 100%;
+                align-self: center;
+                justify-self: center;
+            }
+        }
+    }
+}
